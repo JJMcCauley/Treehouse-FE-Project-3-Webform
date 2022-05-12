@@ -127,14 +127,28 @@ textarea {
     margin-top: 1em;
 }
 
+/* Following Code Adapted from https://css-tricks.com/almanac/properties/t/transition/ */
 textarea {
     height: 8em;
+    background-color: lightgray;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+textarea:focus {
+    background-color: white;
 }
 
 button {
     background-color: #00ac22;
     font-size: 1.5em;
     padding: .5em;
+}
+
+button:hover {
+    background-color: rgba(0, 152, 54, 1);
 }
 
 p {
