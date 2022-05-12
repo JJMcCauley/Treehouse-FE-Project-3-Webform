@@ -1,0 +1,192 @@
+/* Following Code to remove stepper button from number input taken from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-image: radial-gradient(#245864a6, #dded7f08);
+}
+
+header,
+footer {
+    background-color: #2a546a;
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+    color: #fffef9
+}
+
+header {
+    text-transform: uppercase;
+}
+
+footer {
+    font-size: .8em;
+}
+
+main {
+    background-color: #fffef9;
+    color: #2a546a;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 100%;
+}
+
+input,
+textarea,
+button,
+#comment_section,
+select {
+    display: block;
+    margin: 0 0 1em 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input[type='checkbox']:focus,
+input[type='radio']:focus {
+    box-shadow: 0 0 6pt 4pt cornflowerblue;
+    border: none;
+    outline: none;
+}
+
+
+
+#comment_section {
+    padding: 1em 0;
+}
+
+#form_header {
+    margin-top: 0;
+    padding: 1em;
+    text-align: center;
+    border-bottom: #2a546a solid 6px;
+}
+
+#zip_code {
+    width: 40vw;
+}
+
+fieldset {
+    margin-top: 1em;
+    border: none;
+}
+
+.wrapper {
+    border-top: #2a546a solid 3px;    
+    margin: 0.3em 0.3em 0 0.3em;
+}
+
+.input_wrapper {
+    display: inline-block;
+}
+
+#newsletter_signup input,
+#newsletter_signup label{
+    display: inline-block;
+}
+
+#newsletter_signup input{
+    width: auto;
+    margin: 1em 3em 0 0;
+    
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+input {
+    margin: .5em 0 1em 0;
+}
+
+#format_label,
+textarea {
+    margin-top: 1em;
+}
+
+textarea {
+    height: 8em;
+}
+
+button {
+    background-color: #00ac22;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: .5em;
+    }
+
+    #contact_info label,
+    #contact_info input,
+    #contact_info select {
+        display: inline-block;
+        max-width: 388.5px;
+    }
+    
+    #contact_info input,
+    #contact_info select {
+        width: 50vw;
+    }
+
+    #contact_info #zip_code{
+        width: 14%;
+        margin-right: 44%;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 717.5px;
+    }
+
+    .contact_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    #contact_info {
+        width: 100%;
+    }
+
+    #newsletter_signup {
+        width: 100%;
+    }
+
+    main {
+        width: 705px;
+    }
+
+}
+
