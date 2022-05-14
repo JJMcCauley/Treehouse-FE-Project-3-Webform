@@ -122,14 +122,22 @@ input {
     margin: .5em 0 1em 0;
 }
 
+input::placeholder {
+    text-align: right;
+}
+
 #format_label,
 textarea {
     margin-top: 1em;
 }
 
-/* Following Code Adapted from https://css-tricks.com/almanac/properties/t/transition/ */
 textarea {
     height: 8em;
+}
+
+/* Following Code Adapted from https://css-tricks.com/almanac/properties/t/transition/ */
+textarea,
+input {
     background-color: lightgray;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
@@ -137,7 +145,8 @@ textarea {
     transition: background-color 1s ease-out;
 }
 
-textarea:focus {
+textarea:focus,
+input:focus {
     background-color: white;
 }
 
@@ -164,16 +173,16 @@ p {
     #contact_info input,
     #contact_info select {
         display: inline-block;
-        max-width: 388.5px;
+        max-width: 500.5px;
     }
     
     #contact_info input,
     #contact_info select {
-        width: 50vw;
+        width: 70vw;
     }
 
     #contact_info #zip_code{
-        width: 14%;
+        width: 31%;
         margin-right: 44%;
     }
 
